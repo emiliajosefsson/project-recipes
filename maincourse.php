@@ -10,7 +10,7 @@
     <header class="header">
         <h1>Recept</h1>
     </header>
-    <h3>Förrätter:</h3>
+    <h3 class="page-header">Huvudrätter:</h3>
     <div class="sidenav">
         <h3 class="sidenav-h">Recept:</h3>
         <a href="firstcourse.php">Förrätter</a>

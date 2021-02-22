@@ -7,13 +7,6 @@
 .h1 {
   font-size: 40px; }
 
-.middle {
-  text-align: center;
-  color: red; }
-
-.title_header {
-  text-align: center; }
-
 .sidenav-h {
   padding: 6px 8px 6px 16px;
   font-size: 30px;
@@ -27,8 +20,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #818181;
-  opacity: 0.4;
+  background-color: antiquewhite;
   overflow-x: hidden;
   padding-top: 20px; }
 
@@ -40,7 +32,7 @@
   display: block; }
 
 .sidenav a:hover {
-  color: #f1f1f1; }
+  color: #808080; }
 
 .main {
   margin-left: 160px;
@@ -57,7 +49,7 @@
   justify-content: center; }
 
 input[type=text], select, textarea {
-  width: 100%;
+  width: 90%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -68,8 +60,8 @@ label {
   display: inline-block; }
 
 input[type=submit] {
-  background-color: blueviolet;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -77,12 +69,12 @@ input[type=submit] {
   float: right; }
 
 input[type=submit]:hover {
-  background-color: blueviolet; }
+  background-color: lightslategray; }
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
-  width: 80%;
+  background-color: antiquewhite;
+  width: 60%;
   padding: 20px; }
 
 .col-25 {
@@ -92,7 +84,7 @@ input[type=submit]:hover {
 
 .col-75 {
   float: left;
-  width: 70%;
+  width: 75%;
   margin-top: 6px; }
 
 .row:after {
@@ -108,3 +100,24 @@ input[type=submit]:hover {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0; } }
+
+.page-header {
+  text-align: center;
+  font-size: 30px;
+  border-bottom: solid;
+  border-color: antiquewhite;
+  padding-bottom: 20px;
+  border-width: 7px; }
+
+.middle {
+  text-align: center; }
+
+.last {
+  border-bottom: solid;
+  border-color: antiquewhite;
+  padding-bottom: 20px;
+  border-width: 7px; }
+
+.title_header {
+  text-align: center;
+  font-size: 20px; }

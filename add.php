@@ -17,7 +17,7 @@
         <a href="dessert.php">Efterrätter</a>
         <a href="add.php">Lägg till nytt recept</a>
       </div>
-<h2>Lägg till recept:</h2>
+<h3 class="page-header">Lägg till recept:</h3>
 <div class="container-add-form">
 <div class="container">
   <form action="" method="POST" class="addform">
@@ -75,10 +75,6 @@ $password = "";
 $pdo = new PDO($dsn, $user, $password);
 
 
-if(!isset($_POST['submit'])){
-die;
-}
-
 $title = $_POST['title'];
 $ingredients = $_POST['ingredients'];
 $steps = $_POST['steps'];
@@ -92,12 +88,13 @@ $stm->bindParam(':ingredients_IN', $ingredients);
 $stm->bindParam(':steps_IN', $steps);
 $stm->bindParam(':category_IN', $category);
 
+if(isset($_POST['submit'])){
 
 if($stm->execute()) { 
   while ($row = $stm->fetch()) {
     echo $row['title'] . ": " . $row['ingredients'] . "<br />" . $row['steps'] . "<br />";}
   }
   else {echo "Något gick fel!";}
-  
+}
 ?>
 
